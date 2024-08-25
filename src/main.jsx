@@ -12,27 +12,9 @@ import Movies from "./pages/Movies";
 
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <App/>
-    ),
-  },
-
-  {
-     path:"tvshow",
-     element:(<Tvshow/>)
-  },
-
-  {
-    path:"movies",
-    element:(
-      
-    <Movies/>)
-  },
- 
-
-
+  { path: "/", element: <App /> },
+  { path: "/tvshow", element: <Tvshow /> },
+  { path: "/movies", element: <Movies /> },
 ]);
 
 createRoot(document.getElementById("root")).render(
